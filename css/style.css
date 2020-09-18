@@ -1,0 +1,447 @@
+body{
+    font-family: cursive;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container1{
+    position: relative;
+    width: 65%;
+    margin: 0 auto;
+}
+/* Section Header */
+
+.headerbg{
+    background: linear-gradient(to right, #48b1bf, #06beb6);
+    height: 50vh;
+}
+
+.container1 .contenthead .icone{
+    color: white;
+    font-size: 2.5rem;
+    display: flex;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.container1 .contenthead .icone i:hover{
+    transform: rotate(-20deg);
+    transition: 0.5s ease-out;
+}
+
+.container1 .contenthead .logo{
+    display: flex;
+    justify-content: center;
+}
+
+.container1 .contenthead .logo img{
+    height: 7.25rem;
+    width: 17.185rem;
+}
+
+
+/* End Section Header */
+
+
+/* Section Main */
+
+
+main .contentmain{
+    position: relative;
+    background-color: white;
+    height: auto;
+    width: 100%;
+    bottom: 0;
+    z-index: 10;
+    margin: 0 auto;
+    margin-top: -6.25rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 1px 1px 5px rgba(211, 211, 211, 0.5);
+}
+
+.formcontent{
+    background: transparent;
+    height: auto;
+    width: 100%;
+    border-top-left-radius: 15px;
+}
+
+.descmain{
+    background: transparent;
+    height: auto;
+    width: 100%;
+    border-top-right-radius: 15px;
+}
+
+
+form{
+    margin: 4.25rem auto;
+}
+
+form .input-div{
+    background: transparent;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+form .input-div label{
+    position: relative;
+    color: rgba(197, 197, 197, 1);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .7rem;
+    margin-bottom: 4px;
+    height: auto;
+    display: block;
+}
+
+form .input-div input,button{
+    display: block;
+    width: 100%;
+    height: 45px;
+    padding: 0 10px;
+    font-size: .8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+form .input-div textarea{
+    display: block;
+    width: 100%;
+    height: 80px;
+    min-height: 80px;
+    border: 2px solid rgba(197, 197, 197, 0.3);
+    max-height: 200px;
+    padding: 10px 10px;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+form .input-div input:focus , 
+form .input-div textarea:focus{
+    border: 2px solid #06beb6;
+}
+form .input-div input{
+    border: 2px solid rgba(197, 197, 197, 0.3);
+}
+
+form .input-div button{
+    margin: 1rem 0 ;
+    width: 100%;
+    height: 50px;
+    background: red;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+/* Desc main Section */
+
+.desc{
+    margin: 4.25rem auto;
+    width: 100%;
+}
+
+.desc h2 {
+    font-size: 1.5rem;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+}
+
+.desc p {
+    font-size: .93rem;
+    font-family: Montserrat, sans-serif;
+    line-height: 1.5rem;
+    color: #888;
+}
+
+
+/* End Section main */
+
+/* Section footer */
+
+footer{
+    position: relative;
+    background-color: transparent;
+    height: 4rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+footer h6 {
+    line-height: 4rem;
+    margin: 0;
+    font-size: 0.9rem;
+    font-family: Montserrat, sans-serif;
+}
+
+.contenthead{
+    position: relative;
+}
+/* End Section footer */
+
+
+/* nav Bar Section */
+
+.icone i ul {
+    position: relative;
+    list-style: none;
+    color: black;
+    font-size: 1rem;
+    font-family: cursive;
+    font-weight: bold;
+    padding: 10px 0;
+    visibility: hidden;
+    z-index: -10;
+    transition: margin-top 0.5s ease-in-out;
+}
+
+.icone i:hover ul {
+    margin-top: 1rem;
+    visibility: visible;
+    background: white;
+    width: 12.5rem;
+    height: 7rem;
+    border-radius: 9999px;
+    box-shadow: 3px 3px 15px;
+}
+
+.icone i:hover ul li {
+    padding: .4rem 2rem;
+    transform: rotate(-5deg);
+}
+
+.contact-div{
+    position: relative;
+}
+
+.contact-div :nth-child(1){
+    color: #48b1bf;
+    font-size: 1rem;
+    font-family: cursive;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.contact-div :nth-child(2){
+    color: black;
+    font-size: 1rem;
+    font-family: cursive;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+
+/* End Nav bar Section */
+
+/* Media Query */
+
+@media all and (max-width : 480px ){
+    .container1 .contenthead .logo img{
+        height: 3.625rem;
+        width: 8.592rem;
+    }
+
+    .headerbg{
+        height: 60vh;
+    }
+
+    .container1{
+        width: 95%;
+        margin: 0 auto;
+        padding: 0 .5rem;
+    }
+
+    .desc{
+        margin: 2rem auto;
+        height: auto;
+        width: 90%;
+        border-top-right-radius: 15px;
+    } 
+
+    form .input-div{
+        background: transparent;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    form{
+        margin: 1rem auto;
+    } 
+
+    .container1 .contenthead .logo img{
+        height: 2.4166rem;
+        width: 5.2965rem;
+    }
+
+    .contenthead{
+        margin-top: -2rem;
+    }
+
+    main .contentmain{
+        margin-top: -8.25rem;
+    }
+
+    .desc{
+        margin: 4.25rem auto;
+        width: 90%;
+    }
+}
+
+
+
+
+/* For tablet Media Query */
+
+@media all and (min-width : 480px) and (max-width : 768px ){
+    .container1 .contenthead .logo img{
+        height: 3.625rem;
+        width: 8.592rem;
+    }
+
+    .headerbg{
+        height: 60vh;
+    }
+
+    .container1{
+        width: 95%;
+        margin: 0 auto;
+        padding: 0 .5rem;
+    }
+
+    .desc{
+        margin: 2rem auto;
+        height: auto;
+        width: 90%;
+        border-top-right-radius: 15px;
+    } 
+
+    form .input-div{
+        background: transparent;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    form{
+        margin: 1rem auto;
+    } 
+
+    .container1 .contenthead .logo img{
+        height: 6.4166rem;
+        width: 9.2965rem;
+    }
+
+    main .contentmain{
+        margin-top: -20.25rem;
+    }
+
+    .desc{
+        margin: 4.25rem auto;
+        width: 90%;
+    }
+
+}
+
+@media all and (min-width : 769px) and (max-width : 1000px ){
+    .container1 .contenthead .logo img{
+        height: 3.625rem;
+        width: 8.592rem;
+    }
+
+    .headerbg{
+        height: 60vh;
+    }
+
+    .container1{
+        width: 95%;
+        margin: 0 auto;
+        padding: 0 .5rem;
+    }
+
+    .desc{
+        margin: 2rem auto;
+        height: auto;
+        width: 90%;
+        border-top-right-radius: 15px;
+    } 
+
+    form .input-div{
+        background: transparent;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    form{
+        margin: 1rem auto;
+    } 
+
+    .container1 .contenthead .logo img{
+        height: 6.4166rem;
+        width: 9.2965rem;
+    }
+
+    main .contentmain{
+        margin-top: -30.25rem;
+    }
+
+    .desc{
+        margin: 4.25rem auto;
+        width: 100%;
+
+}
+
+@media all and (min-width : 1050px) and (max-width : 1500px ){
+    .container1 .contenthead .logo img{
+        height: 3.625rem;
+        width: 8.592rem;
+    }
+
+    .headerbg{
+        height: 60vh;
+    }
+
+    .container1{
+        width: 95%;
+        margin: 0 auto;
+        padding: 0 .5rem;
+    }
+
+    .desc{
+        margin: 2rem auto;
+        height: auto;
+        width: 90%;
+        border-top-right-radius: 15px;
+    } 
+
+    form .input-div{
+        background: transparent;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    form{
+        margin: 4rem auto;
+    } 
+
+    .container1 .contenthead .logo img{
+        height: 9.4166rem;
+        width: 12.2965rem;
+    }
+
+    main .contentmain{
+        margin-top: -15.25rem;
+    }
+
+    .desc{
+        margin: 4.25rem auto;
+        width: 100%;
+    }
+}}
